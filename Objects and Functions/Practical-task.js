@@ -5,11 +5,11 @@
 
 // -        В объект car добавить свойство power, которое является функцией и выводит в консоль мощность двигателя
 let car = {
-    colore: "чёрный",
-    power: "мощность двигателя", 
+  colore: "чёрный",
+  power: "мощность двигателя", 
 };
 car.colore = "зелёный";
- console.log(car);
+console.log(car);
 
 
 
@@ -17,11 +17,11 @@ car.colore = "зелёный";
 
 
 function calcSum(apple, pear) {
-  if (apple + pear > 1) {
-    return apple + pear;
-  } else {
-    return alert('такое возможно?');
-  }
+if (apple + pear > 1) {
+  return apple + pear;
+} else {
+  return console.log('такое возможно?');
+}
 }
 
 //-        В терминале оплаты сохранено ваше имя, напишите функцию для определения имени в 
@@ -30,43 +30,43 @@ function calcSum(apple, pear) {
 
 
 user = {
-  name: "John",
+name: "John",
 };
 
 function chekName(key) {
 if (user.name === key) {
-  return true;
-  } else {
-    return false;
-  }
+return true;
+} else {
+  return false;
+}
 }
 
 let key = prompt("введите ваше имя", "");
 
 
 if ( chekName(key) ) {
-  alert('Привет ' + key);
+console.log('Привет ' + key);
 } else {
-  alert('нет такого имени');
+console.log('нет такого имени');
 }
 
 //-        Напишите функцию вычисления типа аргумента и вывод типа в консоль
 
 function getArgType(arg){
- const type = typeof arg;
- console.log(type);
+const type = typeof arg;
+console.log(type);
 }
 
 //-        Напишите функцию, которая определяет является ли число простым или нет
 
 function showPrime(num, div = 2) {
-    
+  
+ 
+  if(num <= div ) return 'составное число'; 
    
-    if(num <= div ) return 'составное число'; 
-     
-    if(num % 2 === 0) return 'составное число'  
-    
-    return 'простое число'; 
-   
-    return showPrime(num)
-  }
+  if(num % 2 === 0) return 'составное число'  
+  
+  return 'простое число'; 
+ 
+  return showPrime(num);
+}
