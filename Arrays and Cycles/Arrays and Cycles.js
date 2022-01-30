@@ -6,27 +6,16 @@
 
 let arr = ['ford', 'mazda', 'honda']
   let str = arr.join('; ');
-<<<<<<< HEAD
-  alert(str);
-let arr1 = str.split('; ');
-alert(arr1);
-=======
   console.log(str);
 let arr1 = str.split('; ');
 console.log(arr1);
->>>>>>> Arrays-and-Cycles
 // 5.3 Дан массив имен ваших знакомых, добавить к каждому элементу массива слова hello
 
 let arr = ["dima", "dasha", "lena", "denis"];
 let newArr = arr.map(function (N) {
     return N + " hello";
 });
-
-<<<<<<< HEAD
-alert(newArr);
-=======
 console.log(newArr);
->>>>>>> Arrays-and-Cycles
 
 // 5.4 Преобразовать числовой массив в Boolean
 
@@ -96,8 +85,5 @@ function c(n) {
 }
 
 
-<<<<<<< HEAD
+
  C(9)
-=======
- C(9)
->>>>>>> Arrays-and-Cycles
