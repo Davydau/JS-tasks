@@ -14,22 +14,22 @@ cat.__proto__ = animal;
 console.log(cat.move);
 
 //6.2
-class animal {
-    constructor(name) {
+class Animal {
+    constructor() {
         this.move = true;
     }
-    moving(move) {
+    moving() {
         this.move = true;
-        console.log("двигается.");
+        console.log('двигается.');
     }
-    dontmoving(move) {
+    dontmoving() {
         this.move = false;
-        console.log("не двигается.");
+        console.log('не двигается.');
     }
 }
-class Cat extends animal {
+class Cat extends Animal {
     sleep() {
-        console.log("спит...");
+        console.log('спит...');
     }
 }
 let cat = new Cat();
