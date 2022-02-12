@@ -15,7 +15,6 @@ let arr = ['dima', 'dasha', 'lena', 'denis'];
 let newArr = arr.map(function (N) {
     return N + ' hello';
 });
-
 console.log(newArr);
 
 // 5.4 Преобразовать числовой массив в Boolean
