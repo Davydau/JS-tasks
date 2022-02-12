@@ -14,6 +14,7 @@ cat.__proto__ = animal;
 console.log(cat.move);
 
 //6.2
+
 class Animal {
     constructor() {
         this.move = true;
