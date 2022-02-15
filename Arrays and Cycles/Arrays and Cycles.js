@@ -50,8 +50,8 @@ function getElementIndex(array, element) {
 }
 // 5.8 Реализовать цикл, который будет выводить число а, пока оно не станет меньше 10
 
-function C(a) {
-    while (a > 10) {
+function showNum(a) {
+    while (a >= 10) {
         console.log(a);
         a--;
     }
@@ -59,22 +59,22 @@ function C(a) {
 
 // 5.9 Реализовать цикл, который выводит в консоль простые числа
 
-function c(n) {
-    C: for (i = 1; i <= n; i++) {
+function showCyclePrimeNum(num) {
+    Prime: for (i = 1; i <= num; i++) {
         for (j = 2; j < i; j++) {
             if (i % j == 0) {
-                continue C;
+                continue Prime;
             }
         }
         console.log(i);
     }
 }
 
-C(7);
+showCyclePrimeNum();
 // 5.10 Реализовать цикл, который выводит в консоль нечетные числа
 
-function c(n) {
-    C: for (i = 1; i <= n; i++) {
+function showCycleOddNum(num) {
+    C: for (i = 1; i <= num; i++) {
         let j = 2;
         if (i % j == 0) {
             continue C;
@@ -84,4 +84,4 @@ function c(n) {
     }
 }
 
-C(9);
+showCycleOddNum();
