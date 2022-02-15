@@ -8,9 +8,9 @@ try {
     console.log('‘let перед использованием нужно объявить’');
 }
 // 8.2 При выполнении 1/0  выводить ошибку 'на ноль делить нельзя'
-function culcDivision(a, b) {
+function calcDivision(a, b) {
     try {
-        if (b == 0) {
+        if (b === 0) {
             throw new Error('на ноль делить нельзя');
         } else {
             console.log(a / b);
