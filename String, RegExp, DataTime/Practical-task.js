@@ -11,8 +11,10 @@ let result = str.match(/2\+3/g);
 console.log(result);
 // 7.3 Получить день, месяц и год текущей даты и по отдельности вывести в консоль
 
-var date = new Date();
+let date = new Date();
 
-console.log(date.getDay());
+console.log(date.getDate());
+
 console.log(date.getMonth());
+
 console.log(date.getFullYear());
